@@ -4,20 +4,16 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox prefHeight="508.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ChatViewController">
+<VBox prefHeight="508.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ChatViewController">
    <children>
-      <Pane prefHeight="508.0" prefWidth="770.0">
+      <Pane prefHeight="508.0" prefWidth="791.0">
          <children>
-            <TextArea layoutX="162.0" layoutY="51.0" prefHeight="378.0" prefWidth="613.0" />
             <ListView layoutY="92.0" prefHeight="337.0" prefWidth="156.0" />
-            <TextField layoutX="164.0" layoutY="437.0" prefHeight="64.0" prefWidth="467.0" />
-            <Button contentDisplay="CENTER" layoutX="636.0" layoutY="443.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="142.0" text="Send">
+            <Button contentDisplay="CENTER" layoutX="640.0" layoutY="438.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="142.0" text="Send">
                <font>
                   <Font size="24.0" />
                </font>
@@ -42,6 +38,13 @@
                   <Font size="24.0" />
                </font>
             </Label>
+            <TextArea layoutX="169.0" layoutY="438.0" prefHeight="57.0" prefWidth="462.0" />
+            <ListView layoutX="168.0" layoutY="57.0" prefHeight="372.0" prefWidth="613.0" />
+            <Button contentDisplay="CENTER" layoutX="14.0" layoutY="441.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="142.0" text="Exit">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

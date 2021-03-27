@@ -7,27 +7,26 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox prefHeight="364.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginViewController">
+<VBox prefHeight="364.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.LoginViewController">
    <children>
       <Pane prefHeight="455.0" prefWidth="462.0">
          <children>
-            <TextField accessibleText="dasda" layoutX="86.0" layoutY="143.0" promptText="Username">
+            <TextField fx:id="usernameField" layoutX="86.0" layoutY="143.0" onAction="#onEnter" promptText="Username">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <TextField layoutX="86.0" layoutY="194.0" promptText="Password">
+            <TextField fx:id="passwordField" layoutX="86.0" layoutY="194.0" promptText="Password">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <Button layoutX="52.0" layoutY="255.0" mnemonicParsing="false" text="Login">
+            <Button fx:id="logInButton" layoutX="52.0" layoutY="255.0" mnemonicParsing="false" onAction="#logIn" text="Login">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="266.0" layoutY="255.0" mnemonicParsing="false" text="Sign Up">
+            <Button fx:id="submitButton" layoutX="266.0" layoutY="255.0" mnemonicParsing="false" onAction="#signUp" text="Sign Up">
                <font>
                   <Font size="18.0" />
                </font>
@@ -35,6 +34,11 @@
             <Label layoutX="139.0" layoutY="14.0" text="Login">
                <font>
                   <Font size="48.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorLabel" layoutX="20.0" layoutY="316.0" text="ErrorLabel" textFill="#fa0e0e">
+               <font>
+                  <Font size="24.0" />
                </font>
             </Label>
          </children>
